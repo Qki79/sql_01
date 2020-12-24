@@ -16,3 +16,4 @@ VIEW `new_store`.`all_in_one` AS
         ((`new_store`.`customers` `c`
         JOIN `new_store`.`transactions` `t` ON ((`c`.`id_client` = `t`.`id_client`)))
         JOIN `new_store`.`products` `p` ON ((`t`.`id_product` = `p`.`id_product`)))
+   ORDER BY state
